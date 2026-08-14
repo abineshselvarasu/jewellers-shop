@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: 'Playfair Display', 'Cinzel', Georgia, serif;
+  --font-classic: 'Cinzel', serif;
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Primary Brand Velvet / Burgundy */
+  --color-brand-primary: #8a4853;
+  --color-brand-primary-hover: #70343e;
+  --color-brand-primary-dark: #4a2027;
+  --color-brand-primary-light: #ffb2bc;
+  --color-brand-primary-subtle: #ffd9de;
+
+  /* Gold & Champagne Luxury Accents */
+  --color-gold-light: #fef08a;
+  --color-gold-base: #f59e0b;
+  --color-gold-rich: #d97706;
+  --color-gold-muted: #d4af37;
+
+  /* Warm Neutral Palette */
+  --color-surface-cream: #fff8f5;
+  --color-surface-soft: #fcf7f4;
+  --color-surface-subtle: #f5ece7;
+  --color-surface-border: #d7c1c3;
+  --color-surface-muted: #857374;
+  --color-surface-body: #524345;
+  --color-surface-text: #1e1b18;
+
+  /* Dark Theme Surfaces */
+  --color-dark-bg: #141011;
+  --color-dark-surface: #181414;
+  --color-dark-card: #1e1719;
+  --color-dark-elevated: #241e1f;
+  --color-dark-border: #382f30;
+  --color-dark-border-subtle: #483c3e;
+  --color-dark-muted: #a8999b;
+  --color-dark-subtle: #d7c1c3;
+  --color-dark-text: #fbf2ed;
+}
+
+@layer base {
+  html {
+    /* Device-responsive base font size scale */
+    font-size: 14px; /* Mobile / Portrait (<640px) */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tablets / Landscape mobile (>=640px) */
+  @media (min-width: 640px) {
+    html {
+      font-size: 15px;
+    }
+  }
+
+  /* Laptops / Desktops (>=1024px) */
+  @media (min-width: 1024px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  /* Wide screens / High-res displays (>=1536px) */
+  @media (min-width: 1536px) {
+    html {
+      font-size: 17px;
+    }
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--color-surface-cream);
+    color: var(--color-surface-text);
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+    transition: background-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  html.dark body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Diamond Geometry & Arch */
+.diamond-shape {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.diamond-shape-soft {
+  clip-path: polygon(50% 4%, 96% 50%, 50% 96%, 4% 50%);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+/* Arched Collection Top Shape */
+.arch-card-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+/* Hide scrollbars across browsers */
+.no-scrollbar::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.no-scrollbar,
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom luxury subtle scrollbar for modal interiors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7c1c3;
+  border-radius: 9999px;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #483c3e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a4853;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #ffb2bc;
+}
+
+/* Smooth lux transitions */
+.lux-transition {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Perspective for 3D stage */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+@keyframes shimmerGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmerGlow 4s ease-in-out infinite;
+}
