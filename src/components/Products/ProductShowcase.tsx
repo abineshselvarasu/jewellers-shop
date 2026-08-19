@@ -347,7 +347,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                       onClick={() => setQuickViewProduct(product)}
                       className="w-full h-full cursor-pointer flex items-center justify-center p-2 sm:p-3"
                     >
-                      <img
+                      <img loading="lazy"
                         src={product.image}
                         alt={product.name}
                         referrerPolicy="no-referrer"
@@ -447,7 +447,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                       onClick={() => setQuickViewProduct(product)}
                       className="w-full h-full cursor-pointer flex items-center justify-center p-2.5"
                     >
-                      <img
+                      <img loading="lazy"
                         src={product.image}
                         alt={product.name}
                         referrerPolicy="no-referrer"

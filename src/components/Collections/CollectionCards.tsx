@@ -66,7 +66,7 @@ export const CollectionCards: React.FC<CollectionCardsProps> = ({ onSelectCatego
             >
               {/* Full-Bleed Image Frame with Ambient Glow on Hover */}
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-surface-subtle dark:bg-dark-card shadow-md group-hover:shadow-2xl transition-all duration-700">
-                <img
+                <img loading="lazy"
                   src={col.image}
                   alt={col.title}
                   referrerPolicy="no-referrer"

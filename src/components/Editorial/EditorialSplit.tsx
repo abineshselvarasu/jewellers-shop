@@ -45,7 +45,7 @@ export const EditorialSplit: React.FC = () => {
           {/* Large Visual Feature */}
           <div className="lg:col-span-5 relative group">
             <div className="aspect-[4/5] bg-surface-subtle dark:bg-dark-card overflow-hidden rounded-2xl relative shadow-xl">
-              <img
+              <img loading="lazy"
                 src="./images/jewelry_69ee78684cb4.jpg"
                 alt="For Her Curated Fine Jewelry"
                 referrerPolicy="no-referrer"
@@ -119,7 +119,7 @@ export const EditorialSplit: React.FC = () => {
                     onClick={() => setQuickViewProduct(item)}
                     className="aspect-square bg-surface-subtle dark:bg-dark-card rounded-2xl overflow-hidden mb-3 relative cursor-pointer shadow-xs group-hover/card:shadow-md transition-all duration-300 flex items-center justify-center p-3"
                   >
-                    <img
+                    <img loading="lazy"
                       src={item.image}
                       alt={item.name}
                       referrerPolicy="no-referrer"
@@ -195,7 +195,7 @@ export const EditorialSplit: React.FC = () => {
                     onClick={() => setQuickViewProduct(item)}
                     className="aspect-square bg-surface-subtle dark:bg-dark-card rounded-2xl overflow-hidden mb-3 relative cursor-pointer shadow-xs group-hover/card:shadow-md transition-all duration-300 flex items-center justify-center p-3"
                   >
-                    <img
+                    <img loading="lazy"
                       src={item.image}
                       alt={item.name}
                       referrerPolicy="no-referrer"
@@ -228,7 +228,7 @@ export const EditorialSplit: React.FC = () => {
           {/* Large Visual Feature (Right on Large screens) */}
           <div className="lg:col-span-5 relative group order-1 lg:order-2">
             <div className="aspect-[4/5] bg-surface-subtle dark:bg-dark-card overflow-hidden rounded-2xl relative shadow-xl">
-              <img
+              <img loading="lazy"
                 src="./images/jewelry_9403aab1f250.jpg"
                 alt="For Him Luxury Chains & Signet Rings"
                 referrerPolicy="no-referrer"

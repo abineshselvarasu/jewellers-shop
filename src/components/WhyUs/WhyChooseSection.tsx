@@ -76,7 +76,7 @@ export const WhyChooseSection: React.FC = () => {
               className="group cursor-pointer relative h-72 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 flex flex-col justify-between p-5 bg-black"
             >
               {/* Background Image */}
-              <img
+              <img loading="lazy"
                 src={pillar.image}
                 alt={pillar.title}
                 referrerPolicy="no-referrer"

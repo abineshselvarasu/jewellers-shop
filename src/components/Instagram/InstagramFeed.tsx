@@ -32,7 +32,7 @@ export const InstagramFeed: React.FC = () => {
               onClick={() => setSelectedPost(post)}
               className="aspect-square bg-surface-subtle dark:bg-dark-card rounded-xl overflow-hidden relative group cursor-pointer shadow-xs hover:shadow-lg transition-all duration-300"
             >
-              <img
+              <img loading="lazy"
                 src={post.image}
                 alt="Instagram jewelry post"
                 referrerPolicy="no-referrer"
@@ -96,7 +96,7 @@ export const InstagramFeed: React.FC = () => {
               </button>
 
               <div className="md:w-1/2 aspect-square md:aspect-auto bg-surface-subtle dark:bg-dark-card">
-                <img
+                <img loading="lazy"
                   src={selectedPost.image}
                   alt="Instagram post"
                   referrerPolicy="no-referrer"
