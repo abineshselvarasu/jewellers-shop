@@ -69,7 +69,7 @@ export const ProductQuickView: React.FC = () => {
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
             className="relative bg-surface-cream dark:bg-dark-surface rounded-2xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-surface-border dark:border-dark-border-subtle z-10 text-surface-text dark:text-dark-text max-h-[92vh] overflow-y-auto"
           >
-            <button
+            <button aria-label="Close quick view"
               onClick={() => setQuickViewProduct(null)}
               className="absolute top-4 right-4 p-2 rounded-full hover:bg-surface-subtle dark:hover:bg-dark-elevated text-surface-muted transition z-20 cursor-pointer"
             >
@@ -229,14 +229,14 @@ export const ProductQuickView: React.FC = () => {
                   <div className="flex items-center gap-3 mb-6">
                     <span className="text-xs font-semibold">Quantity:</span>
                     <div className="flex items-center border border-surface-border dark:border-dark-border-subtle rounded-full bg-surface-cream dark:bg-dark-surface px-1">
-                      <button
+                      <button aria-label="Decrease quantity"
                         onClick={() => setQuantity(Math.max(1, quantity - 1))}
                         className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-subtle dark:hover:bg-dark-elevated transition cursor-pointer font-bold text-sm"
                       >
                         -
                       </button>
                       <span className="px-3 py-1 text-xs font-bold">{quantity}</span>
-                      <button
+                      <button aria-label="Increase quantity"
                         onClick={() => setQuantity(quantity + 1)}
                         className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-subtle dark:hover:bg-dark-elevated transition cursor-pointer font-bold text-sm"
                       >

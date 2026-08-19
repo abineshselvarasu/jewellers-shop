@@ -260,7 +260,7 @@ export const HeroCarousel: React.FC = () => {
             transition={{ duration: 1, ease: 'easeOut' }}
             className="absolute inset-0 z-0"
           >
-            <img
+            <img fetchPriority="high"
               src={currentSlide.bgImage}
               alt={currentSlide.headingPrefix}
               referrerPolicy="no-referrer"

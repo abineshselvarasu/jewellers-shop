@@ -77,7 +77,7 @@ export const SearchModal: React.FC = () => {
                   <X className="w-4 h-4" />
                 </button>
               ) : (
-                <button
+                <button aria-label="Close search"
                   onClick={() => setIsSearchOpen(false)}
                   className="absolute right-4 w-7 h-7 rounded-full flex items-center justify-center text-surface-muted hover:text-surface-text hover:bg-surface-subtle dark:hover:bg-dark-surface transition cursor-pointer"
                 >

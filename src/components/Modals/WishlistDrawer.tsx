@@ -47,7 +47,7 @@ export const WishlistDrawer: React.FC = () => {
                   My Curated Wishlist ({wishlist.length})
                 </h3>
               </div>
-              <button
+              <button aria-label="Close wishlist"
                 onClick={() => setIsWishlistOpen(false)}
                 className="p-1 rounded-full hover:bg-surface-subtle dark:hover:bg-dark-elevated transition cursor-pointer"
               >
@@ -64,7 +64,7 @@ export const WishlistDrawer: React.FC = () => {
                 <p className="text-xs text-surface-muted mb-6">
                   Save your favorite gold & diamond pieces to review them anytime.
                 </p>
-                <button
+                <button aria-label="Close wishlist"
                   onClick={() => setIsWishlistOpen(false)}
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-xs font-bold px-8 py-3 rounded-full transition-all duration-200 cursor-pointer shadow-sm active:scale-[0.98] uppercase tracking-wider"
                 >

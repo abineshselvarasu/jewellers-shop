@@ -132,7 +132,7 @@ export const CartDrawer: React.FC = () => {
                 <p className="text-xs text-surface-muted mb-6">
                   Explore our handcrafted gold & diamond collections to find your perfect piece.
                 </p>
-                <button
+                <button aria-label="Close cart"
                   onClick={() => setIsCartOpen(false)}
                   className="bg-brand-primary hover:bg-brand-primary-hover text-white text-xs font-bold px-8 py-3 rounded-full transition-all duration-200 cursor-pointer shadow-sm active:scale-[0.98] uppercase tracking-wider"
                 >
