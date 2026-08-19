@@ -2,5 +2,5 @@
   "name": "Gradiolex Jewellers",
   "description": "Timeless elegance and handcrafted fine jewelry with bespoke collections, gold rate tracker, and luxury editorial showcases.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

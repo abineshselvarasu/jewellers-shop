@@ -33,7 +33,7 @@ const ATELIER_EXPANDED_DATA: AtelierDetailedSlide[] = [
     title: 'The Royal Nizam Emerald Choker',
     subtitle: 'Heirloom Masterpiece in 22KT Gold',
     category: 'Bridal Heirloom',
-    image: '/images/jewelry_cd49356ba6a0.jpg',
+    image: './images/jewelry_cd49356ba6a0.jpg',
     specs: {
       purity: '22KT Pure Hallmark (BIS 916)',
       craftHours: '160+ Goldsmith Hours',
@@ -54,7 +54,7 @@ const ATELIER_EXPANDED_DATA: AtelierDetailedSlide[] = [
     title: 'Peacock Blossom Nakshi Haar',
     subtitle: 'Intricate Nakshi Carving & Uncut Polki',
     category: 'Temple Vault',
-    image: '/images/jewelry_39088cb4d238.jpg',
+    image: './images/jewelry_39088cb4d238.jpg',
     specs: {
       purity: '22KT Solid Yellow Gold',
       craftHours: '210+ Goldsmith Hours',
@@ -75,7 +75,7 @@ const ATELIER_EXPANDED_DATA: AtelierDetailedSlide[] = [
     title: 'Solitaire Eternal Bloom Ring',
     subtitle: 'Certified VVS1 Triple Excellent Diamond',
     category: 'Natural Diamond Atelier',
-    image: '/images/jewelry_2f1376c3de70.jpg',
+    image: './images/jewelry_2f1376c3de70.jpg',
     specs: {
       purity: '18KT Platinum & Rose Gold Duo',
       craftHours: '75+ Setting Hours',
@@ -96,7 +96,7 @@ const ATELIER_EXPANDED_DATA: AtelierDetailedSlide[] = [
     title: 'Gajalakshmi Temple Kada Suite',
     subtitle: 'Antique Red Patina Solid Gold Bangle',
     category: 'Heirloom Bangle',
-    image: '/images/jewelry_39088cb4d238.jpg',
+    image: './images/jewelry_39088cb4d238.jpg',
     specs: {
       purity: '22KT High-Density Gold (BIS 916)',
       craftHours: '120+ Goldsmith Hours',
@@ -117,7 +117,7 @@ const ATELIER_EXPANDED_DATA: AtelierDetailedSlide[] = [
     title: 'Aurelian Lotus Royal Pendant',
     subtitle: 'Bespoke Rose & Yellow Gold Duo',
     category: 'Bespoke Creation',
-    image: '/images/jewelry_6faa4af059aa.jpg',
+    image: './images/jewelry_6faa4af059aa.jpg',
     specs: {
       purity: '18KT Two-Tone Gold',
       craftHours: '90+ Goldsmith Hours',

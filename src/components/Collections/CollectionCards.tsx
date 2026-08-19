@@ -13,7 +13,7 @@ export const CollectionCards: React.FC<CollectionCardsProps> = ({ onSelectCatego
       title: 'Gold Sanctuary',
       subtitle: '22KT Pure Hallmark',
       tagline: 'Featherlight modern hoops & cast bangles.',
-      image: '/images/jewelry_39088cb4d238.jpg',
+      image: './images/jewelry_39088cb4d238.jpg',
       itemCount: '720+ Designs',
       badge: 'BIS 916 HUID',
       fallbackType: 'gold' as const
@@ -23,7 +23,7 @@ export const CollectionCards: React.FC<CollectionCardsProps> = ({ onSelectCatego
       title: 'Bridal & Temple Vault',
       subtitle: 'Regal South Indian Heirlooms',
       tagline: 'Chettinad nakshi haars & ruby chokers.',
-      image: '/images/jewelry_236b9320d4de.jpg',
+      image: './images/jewelry_236b9320d4de.jpg',
       itemCount: '180+ Suites',
       badge: 'Heritage Nakshi',
       fallbackType: 'bridal' as const
@@ -33,7 +33,7 @@ export const CollectionCards: React.FC<CollectionCardsProps> = ({ onSelectCatego
       title: 'Celestial Silver & Gems',
       subtitle: '925 Italian-Cut Brilliance',
       tagline: 'Anti-tarnish 925 sterling solitaires.',
-      image: '/images/jewelry_9ae95ee78101.jpg',
+      image: './images/jewelry_9ae95ee78101.jpg',
       itemCount: '450+ Solitaires',
       badge: '925 Sterling',
       fallbackType: 'silver' as const

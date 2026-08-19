@@ -11,7 +11,7 @@ export const WhyChooseSection: React.FC = () => {
       icon: <ShieldCheck className="w-4 h-4 text-amber-300" />,
       title: 'BIS 916 Hallmarked Gold',
       subtitle: '100% Govt HUID Traceable',
-      image: '/images/jewelry_39088cb4d238.jpg',
+      image: './images/jewelry_39088cb4d238.jpg',
       actionText: 'Live Gold Rates',
       action: () => setIsCalculatorOpen(true)
     },
@@ -20,7 +20,7 @@ export const WhyChooseSection: React.FC = () => {
       icon: <Award className="w-4 h-4 text-amber-300" />,
       title: 'Certified IGI Solitaires',
       subtitle: 'Natural Conflict-Free Diamonds',
-      image: '/images/jewelry_9ae95ee78101.jpg',
+      image: './images/jewelry_9ae95ee78101.jpg',
       actionText: 'Browse Solitaires',
       action: () => {
         const el = document.getElementById('products-section');
@@ -32,7 +32,7 @@ export const WhyChooseSection: React.FC = () => {
       icon: <Sparkles className="w-4 h-4 text-amber-300" />,
       title: 'Bespoke 3D Custom Studio',
       subtitle: 'CAD Renders & Nakshi Casting',
-      image: '/images/jewelry_69ee78684cb4.jpg',
+      image: './images/jewelry_69ee78684cb4.jpg',
       actionText: 'Open 3D Studio',
       action: () => setIsCustomizerOpen(true)
     },
@@ -41,7 +41,7 @@ export const WhyChooseSection: React.FC = () => {
       icon: <Crown className="w-4 h-4 text-amber-300" />,
       title: 'Golden Harvest Scheme',
       subtitle: 'Zero Wastage Gold Exchange',
-      image: '/images/jewelry_839e207699b7.jpg',
+      image: './images/jewelry_839e207699b7.jpg',
       actionText: 'Harvest Scheme',
       action: () => setIsHarvestOpen(true)
     }

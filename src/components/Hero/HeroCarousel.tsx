@@ -70,7 +70,7 @@ export const HeroCarousel: React.FC = () => {
       secondaryCtaText: 'Bespoke Atelier',
       secondaryAction: () => setIsCustomizerOpen(true),
       bgImage:
-        '/images/jewelry_cccada66d943.jpg',
+        './images/Hero Banner 2 - Everyday Sparkle.jpeg',
       fallbackType: 'gold',
       floatingBadge: {
         icon: <ShieldCheck className="w-4 h-4 text-emerald-400" />,
@@ -94,7 +94,7 @@ export const HeroCarousel: React.FC = () => {
       secondaryCtaText: 'Golden Harvest Plan',
       secondaryAction: () => setIsHarvestOpen(true),
       bgImage:
-        '/images/jewelry_3d56872f8946.jpg',
+        './images/Hero Banner 1 - Royal Heritage.jpeg',
       fallbackType: 'bridal',
       floatingBadge: {
         icon: <Crown className="w-4 h-4 text-amber-400" />,
@@ -118,7 +118,7 @@ export const HeroCarousel: React.FC = () => {
       secondaryCtaText: 'Book Private Viewing',
       secondaryAction: () => setIsCustomizerOpen(true),
       bgImage:
-        '/images/jewelry_9cd7b39155a2.jpg',
+        './images/Hero Banner 3 - Modern Solitaires .jpeg',
       fallbackType: 'silver',
       floatingBadge: {
         icon: <Award className="w-4 h-4 text-amber-300" />,
@@ -142,7 +142,7 @@ export const HeroCarousel: React.FC = () => {
       secondaryCtaText: 'Rate Calculator',
       secondaryAction: () => setIsCalculatorOpen(true),
       bgImage:
-        '/images/jewelry_d952bc437c8d.jpg',
+        './images/Gold Bullion Coin & Coins.jpeg',
       fallbackType: 'bullion',
       floatingBadge: {
         icon: <TrendingUp className="w-4 h-4 text-emerald-400" />,
@@ -166,7 +166,7 @@ export const HeroCarousel: React.FC = () => {
       secondaryCtaText: 'Live Bullion Rates',
       secondaryAction: () => setIsCalculatorOpen(true),
       bgImage:
-        '/images/jewelry_b4ed69224815.jpg',
+        "./images/Hero Banner 4 - Men's Luxury.jpeg",
       fallbackType: 'men',
       floatingBadge: {
         icon: <Gem className="w-4 h-4 text-slate-200" />,

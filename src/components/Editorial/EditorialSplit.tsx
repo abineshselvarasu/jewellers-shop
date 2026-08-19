@@ -46,7 +46,7 @@ export const EditorialSplit: React.FC = () => {
           <div className="lg:col-span-5 relative group">
             <div className="aspect-[4/5] bg-surface-subtle dark:bg-dark-card overflow-hidden rounded-2xl relative shadow-xl">
               <img
-                src="/images/jewelry_69ee78684cb4.jpg"
+                src="./images/jewelry_69ee78684cb4.jpg"
                 alt="For Her Curated Fine Jewelry"
                 referrerPolicy="no-referrer"
                 onError={(e) => handleImageError(e, 'earrings')}
@@ -229,7 +229,7 @@ export const EditorialSplit: React.FC = () => {
           <div className="lg:col-span-5 relative group order-1 lg:order-2">
             <div className="aspect-[4/5] bg-surface-subtle dark:bg-dark-card overflow-hidden rounded-2xl relative shadow-xl">
               <img
-                src="/images/jewelry_9403aab1f250.jpg"
+                src="./images/jewelry_9403aab1f250.jpg"
                 alt="For Him Luxury Chains & Signet Rings"
                 referrerPolicy="no-referrer"
                 onError={(e) => handleImageError(e, 'men')}

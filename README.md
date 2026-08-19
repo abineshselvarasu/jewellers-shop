@@ -14,34 +14,36 @@ Discover exquisite handcrafted gold, diamond, bridal, and bespoke silver jewelry
 ## Prerequisites
 
 - Node.js (v18 or higher recommended)
+- npm (Node Package Manager)
 
 ## Setup & Run Locally
 
 1. Install dependencies:
-   ```bash
+   \`\`\`bash
    npm install
-   ```
+   \`\`\`
 
-2. Environment Variables:
-   Copy the example environment file and update variables if necessary.
-   ```bash
-   cp .env.example .env.local
-   ```
-   Set the `GEMINI_API_KEY` in `.env.local` to your Gemini API key if required by the app.
-
-3. Run the development server:
-   ```bash
+2. Run the development server:
+   \`\`\`bash
    npm run dev
-   ```
+   \`\`\`
+
+3. Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:3000`).
 
 ## Build for Production
 
-To create a production build:
-```bash
+To create an optimized production build:
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
-You can preview the built app using:
-```bash
+You can preview the built production app locally using:
+\`\`\`bash
 npm run preview
-```
+\`\`\`
+
+## Project Structure
+
+- `src/components/`: Reusable React components (Header, Footer, Modals, Carousel, etc.)
+- `src/data/`: Mock data for products, slides, and Instagram posts.
+- `public/images/`: Static image assets (product photos, banners, logos).

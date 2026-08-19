@@ -37,34 +37,11 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   };
 
   const Emblem = (
-    <div
-      className={`${iconSizes[size]} relative rounded-full bg-gradient-to-br from-brand-primary via-brand-primary-hover to-brand-primary-dark text-white flex items-center justify-center shadow-md transform group-hover:scale-105 transition-all duration-300 border border-amber-300/40 ring-2 ring-brand-primary/25 shrink-0 overflow-hidden`}
-    >
-      {/* Subtle gold radial shimmer */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(251,191,36,0.35),transparent_65%)]" />
-      
-      {/* Geometric Diamond Facet Lines */}
-      <svg
-        className="w-full h-full absolute inset-0 p-1.5 opacity-30 text-amber-200 pointer-events-none"
-        viewBox="0 0 100 100"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <polygon points="50,10 90,50 50,90 10,50" />
-        <polygon points="50,22 78,50 50,78 22,50" />
-        <circle cx="50" cy="50" r="44" strokeWidth="1" strokeDasharray="3 3" />
-      </svg>
-
-      {/* Monogram G & X with crown crownlet */}
-      <div className="relative z-10 flex flex-col items-center justify-center font-classic select-none">
-        <span className="text-[10px] text-amber-300 leading-none mb-[-2px] tracking-widest font-serif opacity-90">✦</span>
-        <div className="flex items-center tracking-tighter leading-none">
-          <span className="font-bold text-amber-100 text-sm sm:text-base drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">G</span>
-          <span className="font-bold text-amber-300 text-xs sm:text-sm -ml-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">X</span>
-        </div>
-      </div>
-    </div>
+    <img
+      src="./images/logo.png"
+      alt="Gradiolex Logo"
+      className={`${iconSizes[size]} object-cover rounded-full shadow-md transform group-hover:scale-105 transition-all duration-300 border border-amber-300/40 ring-2 ring-brand-primary/25 shrink-0 overflow-hidden`}
+    />
   );
 
   if (variant === 'icon-only' || variant === 'monogram') {
